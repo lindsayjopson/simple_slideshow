@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'MovioDisplay';
+    src: url('../font/MovioDisplay-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../font/MovioDisplay-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../font/MovioDisplay-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../font/MovioDisplay-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+body {
+    background-color: #000;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'MovioDisplay';
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 50px solid black;
+    border-top-width: 100px;
+}
+
+.heading {
+    position: fixed;
+    top: -13px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 50px;
+    z-index: 1;
+}
+
+.color-blue {
+    color: #0b71f0;
+}

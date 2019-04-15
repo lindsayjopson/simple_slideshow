@@ -1,0 +1,27 @@
+.slider_wrap {
+    margin: -50px 0;
+    width: 100%;
+    list-style-type: none;
+    display: block;
+}
+
+.slider_item {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+}
+
+.slider_item.show{
+    transition: 1s;
+    left: 0;
+}
+
+.slider_item.hide{
+    left: 0 !important;
+}
+
+.slider_item img{
+    width: 100%;
+    height: auto;
+    -webkit-filter: sepia(30%);
+}
